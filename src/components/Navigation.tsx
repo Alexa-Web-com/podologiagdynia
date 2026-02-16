@@ -44,7 +44,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           <div
             onClick={() => scrollToSection("#home")}
-            className="flex items-center gap-2 cursor-pointer"
+            className="flex items-center gap-2 cursor-pointer hover:text-primary transition-colors"
           >
             <img src={logo} alt="Logo" className="w-12 h-12" />
             <div className="flex flex-col">

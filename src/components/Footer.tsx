@@ -1,4 +1,4 @@
-import { Mail, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import Facebook from "../assets/teal_facebook.svg";
 import Instagram from "../assets/teal_instagram.svg";
 import Youtube from "../assets/teal_youtube.svg";
@@ -10,11 +10,14 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <h3 className="text-xl font-semibold text-foreground mb-4">
-              Gabinet Podologiczny<br />
+              Gabinet Podologiczny
+              <br />
               Katarzyna Buczyńska
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Profesjonalna opieka podologiczna z wieloletnim doświadczeniem w Gdyni.
+              Zapraszam do miejsca, gdzie wiedza spotyka się z empatią.
+              <br />
+              Od lat pomagam mieszkańcom Gdyni odzyskać radość z każdego kroku.
             </p>
           </div>
 
@@ -29,14 +32,26 @@ const Footer = () => {
                 502 039 656
               </a>
               <p className="flex items-start gap-2">
+                <MapPin className="w-4 h-4 mt-1" />
+                <span>
+                  ul. Waleriana Szefki 2F/B1
+                  <br />
+                  81-572 Gdynia
+                </span>
+              </p>
+              <p className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-1" />
-                <span>ul. Waleriana Szefki 2F/B1<br />81-572 Gdynia</span>
+                <a href="mailto:podolog.katarzyna.buczynska@gmail.com">
+                  podolog.katarzyna.buczynska@gmail.com
+                </a>
               </p>
             </div>
           </div>
 
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Media społecznościowe</h4>
+            <h4 className="font-semibold text-foreground mb-4">
+              Media społecznościowe
+            </h4>
             <div className="flex gap-4">
               <a
                 href="https://www.facebook.com/Gdynia.Podolog"
@@ -64,7 +79,10 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Gabinet Podologiczny Katarzyna Buczyńska. Wszelkie prawa zastrzeżone.</p>
+          <p>
+            © {new Date().getFullYear()} Gabinet Podologiczny Katarzyna
+            Buczyńska. Wszelkie prawa zastrzeżone.
+          </p>
         </div>
       </div>
     </footer>
