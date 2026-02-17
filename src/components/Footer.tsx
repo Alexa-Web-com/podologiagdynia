@@ -15,9 +15,11 @@ const Footer = () => {
               Katarzyna Buczyńska
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Zapraszam do miejsca, gdzie wiedza spotyka się z empatią.
+              Zapraszam do miejsca, gdzie&nbsp;wiedza spotyka się
+              z&nbsp;empatią.
               <br />
-              Od lat pomagam mieszkańcom Gdyni odzyskać radość z każdego kroku.
+              Od lat pomagam mieszkańcom Gdyni odzyskać radość z
+              każdego&nbsp;kroku.
             </p>
           </div>
 
@@ -28,11 +30,11 @@ const Footer = () => {
                 href="tel:502039656"
                 className="flex items-center gap-2 hover:text-primary transition-colors"
               >
-                <Phone className="w-4 h-4" />
+                <Phone className="w-4 h-4 shrink-0" />
                 502 039 656
               </a>
               <p className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 mt-1" />
+                <MapPin className="w-4 h-4 mt-1 shrink-0" />
                 <span>
                   ul. Waleriana Szefki 2F/B1
                   <br />
@@ -40,7 +42,7 @@ const Footer = () => {
                 </span>
               </p>
               <p className="flex items-start gap-2">
-                <Mail className="w-4 h-4 mt-1" />
+                <Mail className="w-4 h-4 mt-1 shrink-0" />
                 <a href="mailto:podolog.katarzyna.buczynska@gmail.com">
                   podolog.katarzyna.buczynska@gmail.com
                 </a>
