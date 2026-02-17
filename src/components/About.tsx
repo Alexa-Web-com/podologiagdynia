@@ -9,7 +9,7 @@ import {
   DialogTitle,
   DialogDescription,
 } from "@/components/ui/dialog";
-import katarzynaImage from "@/assets/katarzyna-buczynska.png";
+import katarzynaImage from "@/assets/katarzyna-buczynska.jpg";
 import certificate1 from "@/assets/certificate-1.jpg";
 import certificate2 from "@/assets/certificate-2.jpg";
 import certificate3 from "@/assets/certificate-3.jpg";
