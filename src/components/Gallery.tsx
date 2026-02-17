@@ -12,9 +12,9 @@ import treatment6 from "@/assets/treatment-6.jpg";
 import equipment1 from "@/assets/equipment-1.jpg";
 import equipment2 from "@/assets/equipment-2.jpg";
 import equipment3 from "@/assets/equipment-3.jpg";
-import care1 from "@/assets/care-1.png";
-import care2 from "@/assets/care-2.png";
-import care3 from "@/assets/care-3.png";
+import care1 from "@/assets/care-1.jpg";
+import care2 from "@/assets/care-2.jpg";
+import care3 from "@/assets/care-3.jpg";
 
 interface GalleryCategory {
   title: string;
