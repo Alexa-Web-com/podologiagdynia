@@ -25,7 +25,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-linear-to-r from-background/95 via-background/80 to-background/30" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto mb-4 px-4 relative z-10">
         <div className="max-w-2xl animate-fade-in">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
             Zadbaj o zdrowie

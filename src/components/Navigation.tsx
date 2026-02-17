@@ -59,7 +59,7 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => (
               <button
                 key={item.href}
@@ -82,7 +82,7 @@ const Navigation = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-foreground hover:text-primary transition-colors"
+            className="lg:hidden p-2 text-foreground hover:text-primary transition-colors"
           >
             {isMobileMenuOpen ? (
               <X className="w-6 h-6" />
@@ -95,20 +95,20 @@ const Navigation = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-background border-t border-border">
+        <div className="lg:hidden bg-background border-t border-border">
           <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
             {navItems.map((item) => (
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
+                className="text-left text-md font-medium text-foreground hover:text-primary transition-colors py-2"
               >
                 {item.label}
               </button>
             ))}
             <Button
               onClick={() => scrollToSection("#contact")}
-              className="bg-primary hover:bg-primary/90 w-full"
+              className="w-full max-w-96 h-11 text-md mx-auto bg-primary hover:bg-primary/90"
             >
               <Phone className="w-4 h-4 mr-2" />
               Umów wizytę
