@@ -72,7 +72,7 @@ const About = () => {
 
             <Card className="p-6 bg-secondary/30 border-primary/20">
               <div className="flex items-start gap-4">
-                <Award className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
+                <Award className="w-8 h-8 text-primary shrink-0 mt-1" />
                 <div>
                   <h4 className="font-semibold text-foreground mb-2">
                     Kwalifikacje i certyfikaty
