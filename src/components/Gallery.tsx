@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { X, ArrowLeft } from "lucide-react";
 import office1 from "@/assets/office-1.jpg";
 import office2 from "@/assets/office-2.jpg";
@@ -68,6 +68,51 @@ const Gallery = () => {
   const [activeCategory, setActiveCategory] = useState<number | null>(null);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
+  // Handle back button to close gallery/lightbox
+  useEffect(() => {
+    const handlePopState = () => {
+      // If we popped state and we have selected image, close it
+      if (selectedImage) {
+        setSelectedImage(null);
+      } else if (activeCategory !== null) {
+        setActiveCategory(null);
+      }
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, [activeCategory, selectedImage]);
+
+  const openCategory = (index: number) => {
+    setActiveCategory(index);
+    window.history.pushState({ gallery: "category" }, "");
+    const gallerySection = document.getElementById("gallery");
+    if (gallerySection) {
+      gallerySection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const openImage = (src: string) => {
+    setSelectedImage(src);
+    window.history.pushState({ gallery: "image" }, "");
+  };
+
+  const closeCategory = () => {
+    if (window.history.state?.gallery) {
+      window.history.back();
+    } else {
+      setActiveCategory(null);
+    }
+  };
+
+  const closeImage = () => {
+    if (window.history.state?.gallery === "image") {
+      window.history.back();
+    } else {
+      setSelectedImage(null);
+    }
+  };
+
   return (
     <section id="gallery" className="py-24 bg-background">
       <div className="container mx-auto px-4">
@@ -88,7 +133,7 @@ const Gallery = () => {
                 key={index}
                 className="relative overflow-hidden rounded-2xl cursor-pointer hover-lift animate-fade-in group"
                 style={{ animationDelay: `${index * 0.1}s` }}
-                onClick={() => setActiveCategory(index)}
+                onClick={() => openCategory(index)}
               >
                 <img
                   src={cat.cover}
@@ -104,7 +149,7 @@ const Gallery = () => {
         ) : (
           <div className="max-w-5xl mx-auto animate-fade-in">
             <button
-              onClick={() => setActiveCategory(null)}
+              onClick={closeCategory}
               className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-8 font-medium"
             >
               <ArrowLeft className="w-5 h-5" />
@@ -118,7 +163,7 @@ const Gallery = () => {
                 <div
                   key={index}
                   className="relative overflow-hidden rounded-xl cursor-pointer group hover-lift"
-                  onClick={() => setSelectedImage(image.src)}
+                  onClick={() => openImage(image.src)}
                 >
                   <img
                     src={image.src}
@@ -141,11 +186,14 @@ const Gallery = () => {
       {selectedImage && (
         <div
           className="fixed inset-0 bg-foreground/90 z-50 flex items-center justify-center p-4 animate-fade-in"
-          onClick={() => setSelectedImage(null)}
+          onClick={closeImage}
         >
           <button
             className="absolute top-4 right-4 text-white hover:text-primary transition-colors"
-            onClick={() => setSelectedImage(null)}
+            onClick={(e) => {
+              e.stopPropagation();
+              closeImage();
+            }}
           >
             <X className="w-8 h-8" />
           </button>
