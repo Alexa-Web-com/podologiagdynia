@@ -92,7 +92,7 @@ const About = () => {
                       setOpen(true);
                     }}
                   >
-                    Zobacz certyfikaty
+                    Zobacz wszystkie certyfikaty
                   </Button>
                 </div>
               </div>

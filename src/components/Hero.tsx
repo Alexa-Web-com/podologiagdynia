@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone, ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-podology.jpg";
+import heroImage from "@/assets/hero-podology.png";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -12,7 +12,10 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-20">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center pt-20"
+    >
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}
@@ -25,13 +28,15 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-2xl animate-fade-in">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
-            Zadbaj o zdrowie<br />
+            Zadbaj o zdrowie
+            <br />
             <span className="text-primary">swoich stóp</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-            Profesjonalna opieka podologiczna z wieloletnim doświadczeniem.<br />
-            Specjalistka Katarzyna Buczyńska oferuje kompleksowe zabiegi<br />
-            w nowoczesnym gabinecie w Gdyni.
+            Profesjonalna opieka podologiczna z wieloletnim doświadczeniem.
+            <br />
+            Specjalistka Katarzyna Buczyńska oferuje kompleksowe zabiegi
+            <br />w nowoczesnym gabinecie w Gdyni.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button
