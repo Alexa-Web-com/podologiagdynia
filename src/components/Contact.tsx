@@ -9,6 +9,7 @@ const Contact = () => {
       label: "Adres",
       value: "ul. Waleriana Szefki 2F/B1",
       value2: "81-572 Gdynia",
+      value3: "(dla klientów dostępny parking)",
     },
     {
       icon: <Phone className="w-6 h-6 text-primary" />,
@@ -19,14 +20,15 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6 text-primary" />,
       label: "E-mail",
-      value: "podolog.katarzyna.buczynska@gmail.com",
-      link: "mailto:podolog@gmail.com",
+      value: "katarzynabuczynska.flpp@gmail.com",
+      link: "mailto:katarzynabuczynska.flpp@gmail.com",
     },
     {
       icon: <Clock className="w-6 h-6 text-primary" />,
       label: "Godziny otwarcia",
-      value: "Poniedziałek - Piątek: 9:00 - 18:00",
-      value2: "Sobota: 9:00 - 14:00",
+      value: "Poniedziałek - Piątek: 8:00 - 20:00",
+      value2:
+        "Pogotowie podologiczne w nagłych przypadkach - możliwość przyjęcia w weekend oraz święta.",
     },
   ];
 
@@ -74,6 +76,11 @@ const Contact = () => {
                         {info.value2 && (
                           <p className="text-sm sm:text-base text-muted-foreground">
                             {info.value2}
+                          </p>
+                        )}
+                        {info.value3 && (
+                          <p className="text-sm sm:text-base text-muted-foreground">
+                            {info.value3}
                           </p>
                         )}
                       </>

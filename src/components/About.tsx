@@ -66,7 +66,7 @@ const About = () => {
             <p className="text-lg text-muted-foreground leading-relaxed">
               W swojej pracy kieruję się indywidualnym podejściem do każdego
               pacjenta, wykorzystując najnowocześniejszy sprzęt i sprawdzone
-              metody leczenia. Regularnie podnoszę swoje kwalifikacje,
+              metody terapii. Regularnie podnoszę swoje kwalifikacje,
               uczestnicząc w szkoleniach i konferencjach branżowych.
             </p>
 
@@ -79,7 +79,7 @@ const About = () => {
                   </h4>
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• Certyfikowany Podolog</li>
-                    <li>• Specjalizacja w leczeniu wrastających paznokci</li>
+                    <li>• Specjalizacja w terapii wrastających paznokci</li>
                     <li>• Szkolenia z zakresu rekonstrukcji paznokci</li>
                     <li>• Ukończone kursy z pedicure medycznego</li>
                   </ul>
