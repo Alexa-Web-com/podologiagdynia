@@ -1,7 +1,7 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import Facebook from "../assets/teal_facebook.svg";
 import Instagram from "../assets/teal_instagram.svg";
-import Youtube from "../assets/teal_youtube.svg";
+// import Youtube from "../assets/teal_youtube.svg";
 
 const Footer = () => {
   return (
@@ -43,8 +43,8 @@ const Footer = () => {
               </p>
               <p className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-1 shrink-0" />
-                <a href="mailto:podolog.katarzyna.buczynska@gmail.com">
-                  podolog.katarzyna.buczynska@gmail.com
+                <a href="mailto:katarzynabuczynska.flpp@gmail.com">
+                  katarzynabuczynska.flpp@gmail.com
                 </a>
               </p>
             </div>
@@ -63,19 +63,19 @@ const Footer = () => {
                 <img src={Facebook} className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/podolog.buczynska?igsh=aWxxaDcxajkwcHF4"
                 className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
                 aria-label="Instagram"
               >
                 <img src={Instagram} className="w-5 h-5" />
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
                 aria-label="Youtube"
               >
                 <img src={Youtube} className="w-5 h-5" />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

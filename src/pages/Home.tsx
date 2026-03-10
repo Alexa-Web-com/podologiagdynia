@@ -8,6 +8,7 @@ import Gallery from "@/components/Gallery";
 import Pricing from "@/components/Pricing";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import VideoPromo from "@/components/VideoPromo";
 
 const Index = () => {
   useEffect(() => {
@@ -25,6 +26,7 @@ const Index = () => {
       <About />
       <Services />
       <Gallery />
+      <VideoPromo />
       <Pricing />
       <Contact />
       <Footer />
