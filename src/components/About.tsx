@@ -14,12 +14,41 @@ import certificate1 from "@/assets/certificate-1.jpg";
 import certificate2 from "@/assets/certificate-2.jpg";
 import certificate3 from "@/assets/certificate-3.jpg";
 import certificate4 from "@/assets/certificate-4.jpg";
+import certificate5 from "@/assets/certificate-5.jpg";
+import certificate6 from "@/assets/certificate-6.jpg";
+import certificate7 from "@/assets/certificate-7.jpg";
+import certificate8 from "@/assets/certificate-8.jpg";
+import certificate9 from "@/assets/certificate-9.jpg";
+import certificate10 from "@/assets/certificate-10.jpg";
+import certificate11 from "@/assets/certificate-11.jpg";
+import certificate12 from "@/assets/certificate-12.jpg";
+import certificate13 from "@/assets/certificate-13.jpg";
+import certificate14 from "@/assets/certificate-14.jpg";
 
 const certificates = [
-  { src: certificate1, alt: "Certyfikat Podologa" },
-  { src: certificate2, alt: "Specjalizacja podologiczna" },
-  { src: certificate3, alt: "Certyfikat rekonstrukcji paznokci" },
-  { src: certificate4, alt: "Certyfikat pedicure medycznego" },
+  {
+    src: certificate1,
+    alt: "Certyfikat ze szkolenia specjalistycznego",
+  },
+  { src: certificate2, alt: "Certyfikat ze szkolenia specjalistycznego" },
+  { src: certificate3, alt: "Certyfikat ze szkolenia specjalistycznego" },
+  { src: certificate4, alt: "Certyfikat z warsztatów podologicznych" },
+  { src: certificate5, alt: "Certyfikat ze szkolenia podologicznego" },
+  {
+    src: certificate6,
+    alt: "Certyfikat uczetniczenia w naukowej konferencji podologicznej",
+  },
+  { src: certificate7, alt: "Certyfikat z warsztatów podologicznych" },
+  {
+    src: certificate8,
+    alt: "Certyfikat uczetniczenia w naukowej konferencji medycznej",
+  },
+  { src: certificate9, alt: "Certyfikat z warsztatów podologicznych" },
+  { src: certificate10, alt: "Certyfikat z kursu specjalistycznego" },
+  { src: certificate11, alt: "Certyfikat z kursu specjalistycznego" },
+  { src: certificate12, alt: "Certyfikat ze szkolenia podologicznego" },
+  { src: certificate13, alt: "Certyfikat ze warsztatów z anatomii sekcyjnej" },
+  { src: certificate14, alt: "Certyfikat z zawodowego kursu podologicznego" },
 ];
 
 const About = () => {
