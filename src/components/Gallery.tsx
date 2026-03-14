@@ -3,12 +3,15 @@ import { X, ArrowLeft } from "lucide-react";
 import office1 from "@/assets/office-1.jpg";
 import office2 from "@/assets/office-2.jpg";
 import office3 from "@/assets/office-3.jpg";
-import treatment1 from "@/assets/treatment-1.jpg";
+import treatment1 from "@/assets/treatment-1.png";
 import treatment2 from "@/assets/treatment-2.jpg";
 import treatment3 from "@/assets/treatment-3.jpg";
 import treatment4 from "@/assets/treatment-4.jpg";
 import treatment5 from "@/assets/treatment-5.jpg";
 import treatment6 from "@/assets/treatment-6.jpg";
+import treatment7 from "@/assets/treatment-7.jpg";
+import treatment8 from "@/assets/treatment-8.jpg";
+import treatment9 from "@/assets/treatment-9.jpg";
 import equipment1 from "@/assets/equipment-1.jpg";
 import equipment2 from "@/assets/equipment-2.jpg";
 import equipment3 from "@/assets/equipment-3.jpg";
@@ -36,12 +39,15 @@ const categories: GalleryCategory[] = [
     title: "Zabiegi podologiczne",
     cover: treatment1,
     images: [
-      { src: treatment1, alt: "Profesjonalny zabieg podologiczny" },
-      { src: treatment2, alt: "Zabieg w trakcie" },
-      { src: treatment3, alt: "Profesjonalny zabieg podologiczny" },
-      { src: treatment4, alt: "Profesjonalne środki do pielęgnacji stóp" },
-      { src: treatment5, alt: "Profesjonalne środki do pielęgnacji stóp" },
-      { src: treatment6, alt: "Profesjonalny zabieg podologiczny" },
+      { src: treatment1, alt: "Korekta paznokci metodą Unibrace" },
+      { src: treatment2, alt: "Korekta paznokci metodą Unibrace" },
+      { src: treatment3, alt: "Korekta paznokci metodą Unibrace" },
+      { src: treatment4, alt: "Korekta paznokci metodą Kostki Arkady" },
+      { src: treatment5, alt: "Korekta paznokci metodą Kostki Arkady" },
+      { src: treatment6, alt: "Korekta paznokci metodą Kostki Arkady" },
+      { src: treatment7, alt: "Korekta paznokci metodą Kostki Arkady" },
+      { src: treatment8, alt: "Terapia brodawek - przed zabiegiem" },
+      { src: treatment9, alt: "Terapia brodawek - po zabiegu" },
     ],
   },
   {

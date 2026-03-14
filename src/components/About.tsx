@@ -9,7 +9,7 @@ import {
   DialogTitle,
   DialogDescription,
 } from "@/components/ui/dialog";
-import katarzynaImage from "@/assets/katarzyna-buczynska.jpg";
+import katarzynaImage from "@/assets/katarzyna.png";
 import certificate1 from "@/assets/certificate-1.jpg";
 import certificate2 from "@/assets/certificate-2.jpg";
 import certificate3 from "@/assets/certificate-3.jpg";
@@ -109,7 +109,6 @@ const About = () => {
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• Certyfikowany Podolog</li>
                     <li>• Specjalizacja w terapii wrastających paznokci</li>
-                    <li>• Szkolenia z zakresu rekonstrukcji paznokci</li>
                     <li>• Ukończone kursy z pedicure medycznego</li>
                   </ul>
                   <Button
