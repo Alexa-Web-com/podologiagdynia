@@ -9,7 +9,7 @@ const Contact = () => {
       label: "Adres",
       value: "ul. Waleriana Szefki 2F/B1",
       value2: "81-572 Gdynia",
-      value3: "(dla klientów dostępny parking)",
+      value3: "(dla klientów dostępny darmowy parking)",
     },
     {
       icon: <Phone className="w-6 h-6 text-primary" />,

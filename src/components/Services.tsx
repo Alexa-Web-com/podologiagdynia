@@ -3,9 +3,9 @@ import {
   Scissors,
   Footprints,
   Sparkles,
-  Wrench,
   Heart,
   Shield,
+  Smile,
 } from "lucide-react";
 
 const Services = () => {
@@ -32,16 +32,16 @@ const Services = () => {
       icon: <Heart className="w-10 h-10 text-primary" />,
       title: "Pedicure medyczny",
       description:
-        "Kompleksowa pielęgnacja stóp z uwzględnieniem aspektów zdrowotnych.",
+        "Kompleksowa pielęgnacja stóp zdrowych i zmienionych chorobowo (łuszczyca, grzybica, atopowe zapalenie skóry)",
+    },
+    {
+      icon: <Smile className="w-10 h-10 text-primary" />,
+      title: "Gabinet przyjazny dzieciom",
+      description:
+        "Bezstresowe wizyty dla najmłodszych prowadzone przez ulubioną „Panią Stópkę”. Specjalistyczne podejście do dziecięcych stóp, delikatna diagnostyka oraz edukacja przez zabawę.",
     },
     {
       icon: <Shield className="w-10 h-10 text-primary" />,
-      title: "Terapia grzybicy paznokci",
-      description:
-        "Diagnoza i skuteczne terapii infekcji grzybiczych paznokci i skóry.",
-    },
-    {
-      icon: <Wrench className="w-10 h-10 text-primary" />,
       title: "Opieka nad stopą cukrzycową",
       description:
         "Specjalistyczna opieka dla osób z cukrzycą, zapobieganie powikłaniom.",
