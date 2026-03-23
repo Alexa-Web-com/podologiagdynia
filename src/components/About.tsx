@@ -24,31 +24,61 @@ import certificate11 from "@/assets/certificate-11.jpg";
 import certificate12 from "@/assets/certificate-12.jpg";
 import certificate13 from "@/assets/certificate-13.jpg";
 import certificate14 from "@/assets/certificate-14.jpg";
+import certificate15 from "@/assets/certificate-15.jpg";
+import certificate16 from "@/assets/certificate-16.jpg";
+import certificate17 from "@/assets/certificate-17.jpg";
+import certificate18 from "@/assets/certificate-18.jpg";
+import certificate19 from "@/assets/certificate-19.jpg";
+import certificate20 from "@/assets/certificate-20.jpg";
+import certificate21 from "@/assets/certificate-21.jpg";
+import certificate22 from "@/assets/certificate-22.jpg";
+import certificate23 from "@/assets/certificate-23.jpg";
 
 const certificates = [
+  { src: certificate1, alt: "BEAUTY UP KURS ZAWODOWY" },
+  { src: certificate2, alt: "UNIBRACE - SPECJALISTA I-go STOPNIA" },
   {
-    src: certificate1,
-    alt: "Certyfikat ze szkolenia specjalistycznego",
+    src: certificate3,
+    alt: "CERTYFIKAT METODA ARKADY - PRZEŁOM W DZIEDZINIE PODOLOGII I MEDYCYNY",
   },
-  { src: certificate2, alt: "Certyfikat ze szkolenia specjalistycznego" },
-  { src: certificate3, alt: "Certyfikat ze szkolenia specjalistycznego" },
-  { src: certificate4, alt: "Certyfikat z warsztatów podologicznych" },
-  { src: certificate5, alt: "Certyfikat ze szkolenia podologicznego" },
+  { src: certificate4, alt: "PODO PRACTICA - CERTYFIKAT NR. 058" },
+  { src: certificate5, alt: "CERTYFIKAT DOBRA SZKOŁA ORTOPODOLOGII PWO15" },
   {
     src: certificate6,
-    alt: "Certyfikat uczetniczenia w naukowej konferencji podologicznej",
+    alt: "CERTYFIKAT TERAPIA BRODAWEK METODĄ ELEKTROKOAGULACJI",
   },
-  { src: certificate7, alt: "Certyfikat z warsztatów podologicznych" },
+  { src: certificate7, alt: "FIZJO365 ANATOMIA SEKCYJNA" },
+  { src: certificate8, alt: "PODOLAND STAŻ 2019" },
+  { src: certificate9, alt: "PODOLAND STAŻ 2020" },
+  { src: certificate10, alt: "KERPRO - KONGRES PODOLOGIA W PRAKTYCE" },
+  { src: certificate11, alt: "KONGRES CUKRZYCY 2018" },
+  { src: certificate12, alt: "CERTYFIKAT - ZAKAŻENIA GRZYBICZE" },
   {
-    src: certificate8,
-    alt: "Certyfikat uczetniczenia w naukowej konferencji medycznej",
+    src: certificate13,
+    alt: "CERTYFIKAT - ABC POSTĘPOWANIA Z RANĄ - ZESPÓŁ STOPY CUKRZYCOWEJ",
   },
-  { src: certificate9, alt: "Certyfikat z warsztatów podologicznych" },
-  { src: certificate10, alt: "Certyfikat z kursu specjalistycznego" },
-  { src: certificate11, alt: "Certyfikat z kursu specjalistycznego" },
-  { src: certificate12, alt: "Certyfikat ze szkolenia podologicznego" },
-  { src: certificate13, alt: "Certyfikat ze warsztatów z anatomii sekcyjnej" },
-  { src: certificate14, alt: "Certyfikat z zawodowego kursu podologicznego" },
+  {
+    src: certificate14,
+    alt: "EDUKACYJNE SPOTKANIE PODOLOGÓW WOJEWÓDZTWA ZACHODNIOPOMORSKIEGO",
+  },
+  {
+    src: certificate15,
+    alt: "OGÓLNOPOLSKA NAUKOWA KONFERENCJA - BYDGOSZCZ 2018",
+  },
+  {
+    src: certificate16,
+    alt: "CERTYFIKAT III KONFERENCJI NAUKOWEJ MEDYCYNY HOLISTYCZNEJ",
+  },
+  {
+    src: certificate17,
+    alt: "CERTYFIKAT AKADEMIA HIGIENY - TECHNOLOGIA DEZYFEKCJI I STERYLIZACJI",
+  },
+  { src: certificate18, alt: "KART CERTYFIKAT" },
+  { src: certificate19, alt: "DYPLOM OD 'DZIDZI' - WERONIKA" },
+  { src: certificate20, alt: "CERTYFIKAT MEDYCZNA STRONA PODOLOGII - 2018" },
+  { src: certificate21, alt: "CERTYFIKAT MEDYCZNA STRONA PODOLOGII - 2019" },
+  { src: certificate22, alt: "CERTYFIKAT MEDYCZNA STRONA PODOLOGII - 2020" },
+  { src: certificate23, alt: "CERTYFIKAT MEDYCZNA STRONA PODOLOGII - 2021" },
 ];
 
 const About = () => {
