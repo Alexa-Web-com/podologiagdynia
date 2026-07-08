@@ -31,8 +31,8 @@ const categories: GalleryCategory[] = [
     cover: office1,
     images: [
       { src: office1, alt: "Nowoczesne wnętrze gabinetu" },
-      { src: office2, alt: "Recepcja i poczekalnia" },
-      { src: office3, alt: "Korytarz  gabinetu" },
+      { src: office2, alt: "Stanowisko pracy podologa" },
+      { src: office3, alt: "Wyposażenie gabinetu" },
     ],
   },
   {
